@@ -71,6 +71,6 @@ class BooksController < ApplicationController
     def book_params
       p "TOMORROW IS IN YOUR HANDS"
       p params # paramsの中身を表示
-      params.require(:book).permit(:title, :memo, :author)
+      params.require(:book).permit(:title, :memo, :author, :picture)
     end
 end
